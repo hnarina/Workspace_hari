@@ -1,0 +1,57 @@
+package demo.BaseAppJDBC;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+//import mysql-connector-java-5.1.45-bin
+
+public class JdbcSetup {
+
+	
+	public static void main(String[] args) throws SQLException, ClassNotFoundException{
+		
+
+		String jdbcDriver="com.mysql.jdbc.Driver";
+		
+		Class.forName(jdbcDriver);
+		
+		
+
+		String jdbcURL = "jdbc:mysql://localhost:3306/test";
+		
+		Connection dbConnection = DriverManager.getConnection(jdbcURL);
+		PreparedStatement insertWallet =dbConnection.prepareStatement("insert into Wallet(balance) values(?)");
+		insertWallet.setFloat(1, 1000.0f);  
+		PreparedStatement selectQuery = dbConnection.prepareStatement("select wallet_id where ID=);"
+			
+		PreparedStatement insertCustomer =dbConnection.prepareStatement("insert into Customer(name,mobileNumber,wallet_id) values(?,?,?)");
+		
+		
+		
+		int rows=insertStatement.executeUpdate(insertQuery);
+		
+		ResultSet result = 
+		
+			while(result.next()){
+		
+				int id = result.getInt(4);
+			
+			
+	
+		String insertQuery = "insert into Customer";
+		
+		PreparedStatement insertStatement= dbConnection.prepareStatement(insertQuery);
+		
+		insertStatement.setString(1, );
+		
+		
+		int rows = insertStatement.executeUpdate();
+		
+			
+	}
+	
+}
+}

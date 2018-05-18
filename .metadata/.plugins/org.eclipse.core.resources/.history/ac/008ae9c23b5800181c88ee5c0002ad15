@@ -1,0 +1,24 @@
+package demo.services;
+import demo.repo.*;
+import demo.beans.*;
+
+public class WalletServiceImpl implements WalletService {
+	private WalletRepo repo ;
+	@Override
+	public Customer createAccount(String name, String mobile, float amount) {
+		Customer c1 = new Customer();
+		c1.setName(name);
+		c1.setMobileNumber(mobile);
+		
+		
+			
+    	return c1;
+	}
+
+	@Override
+	public Customer showBalance(String mobile) {
+		return Customer;
+	}
+	
+
+}

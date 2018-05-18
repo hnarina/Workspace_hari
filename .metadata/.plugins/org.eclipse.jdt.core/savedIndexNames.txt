@@ -1,0 +1,7 @@
+INDEX VERSION 1.130+D:\javaclass\Workspace_hari\.metadata\.plugins\org.eclipse.jdt.core
+3175901698.index
+914402029.index
+3542504834.index
+53998043.index
+145887870.index
+4145083276.index

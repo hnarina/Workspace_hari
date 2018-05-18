@@ -1,0 +1,26 @@
+package demo.repo;
+
+import java.util.HashMap;
+
+import demo.beans.Customer;
+
+public class WalletRepoImpl implements WalletRepo{
+	HashMap<String, Customer> data = new HashMap<String, Customer>();
+	@Override
+	public boolean save(Customer c) {
+		data.put(c.getMobileNumber(), c);
+		return true;
+	}
+  public void showAll()
+  {
+	  for(String s : data.keySet()) {
+		  System.out.println(s);
+	  }
+  }
+	@Override
+	public Customer findOne(String mobile) {
+		return data.get(mobile);
+		
+	}
+
+}

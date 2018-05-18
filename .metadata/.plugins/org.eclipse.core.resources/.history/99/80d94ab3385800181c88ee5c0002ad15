@@ -1,0 +1,5 @@
+package demo.repo;
+
+public interface Map<T1, T2> {
+
+}

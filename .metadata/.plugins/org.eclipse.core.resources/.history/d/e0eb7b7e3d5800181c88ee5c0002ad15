@@ -1,0 +1,13 @@
+package demo.client;
+import demo.services.*;
+
+public class WalletApp {
+   
+	public static void main(String[] args) {
+		WalletServiceImpl service = new WalletServiceImpl();
+		service.createAccount("Meenal", "9649658180", 1000);
+		service.showBalance("9649658180");
+		
+	}
+
+}
